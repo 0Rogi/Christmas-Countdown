@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://thumbs.dreamstime.com/b/elegant-christmas-background-bright-wood-style-modern-simple-border-baubles-fir-branches-stars-ornamental-trees-63018435.jpg);
+    background-image: url("images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -12,17 +12,9 @@ body {
     margin: 0;
     overflow: hidden
 }
-h1 {
-    font-weight: normal;
-    font-size: 60px;
-    margin: -150px 0 40px;
-    font-family: fantasy;
-    color: blue;
-}
 .countdown {
     display: flex;
     transform: scale(2);
-    color: gold;
     font-family: fantasy;
 }
 .time {
@@ -31,7 +23,7 @@ h1 {
     align-items: center;
     justify-content: center;
     margin: 15px;
-    color: red
+    color: green
 }
 .time h2 {
     font-weight: bold;
@@ -39,13 +31,7 @@ h1 {
     line-height: 1;
     margin: 0 0 5px
 }
-.time small {
-    color: blue
-}
 @media (max-width: 500px) {
-    h1 {
-        font-size: 45px;
-    }
     .time {
         margin: 5px;
     }
