@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+* {
+    font-family: "Freeman", sans-serif;
+    user-select: none;
+}
+
 body {
     background-image: url("images/background.png");
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -10,13 +16,16 @@ body {
     justify-content: center;
     text-align: center;
     margin: 0;
+    padding: 0;
     overflow: hidden
 }
+
 .countdown {
     display: flex;
     transform: scale(2);
     font-family: fantasy;
 }
+
 .time {
     display: flex;
     flex-direction: column;
@@ -25,13 +34,23 @@ body {
     margin: 15px;
     color: green
 }
+
 .time h2 {
     font-weight: bold;
     font-size: 36px;
     line-height: 1;
     margin: 0 0 5px
 }
-@media (max-width: 500px) {
+
+#text {
+    font-size: 80px;
+    position: absolute;
+    top: 0;
+    margin-top: 300px;
+    color: yellow;
+}
+
+@media only screen and (max-width: 600px) {
     .time {
         margin: 5px;
     }
@@ -40,5 +59,9 @@ body {
     }
     .time small {
         font-size: 10px;
+    }
+    #text {
+        font-size: 150%;
+        margin-top: 300px;
     }
 }

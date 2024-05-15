@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    
     <title>Christmas Countdown</title>
     <link rel="shortcut icon" href="images/santa.png">
+    
     <link rel="stylesheet" href="style.css">
+
+    <script defer src="./script.js"></script>
+
 </head>
 <body>
+    <h1 id="text">CHRISTMAS WILL ARRIVE IN...</h1>
     <div id="countdown" class="countdown">
         <div class="time">
-            <h2 id="days"></h2>
-            <small>Days</small>
+            <h2 id="days" class="toHide"></h2>
+            <small class="toHide">Days</small>
         </div>
         <div class="time">
-            <h2 id="hours"></h2>
-            <small>Hours</small>
+            <h2 id="hours" class="toHide"></h2>
+            <small class="toHide">Hours</small>
         </div>
         <div class="time">
-            <h2 id="minutes"></h2>
-            <small>Minutes</small>
+            <h2 id="minutes" class="toHide"></h2>
+            <small class="toHide">Minutes</small>
         </div>
         <div class="time">
-            <h2 id="seconds"></h2>
-            <small>Seconds</small>
+            <h2 id="seconds" class="toHide"></h2>
+            <small class="toHide">Seconds</small>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
